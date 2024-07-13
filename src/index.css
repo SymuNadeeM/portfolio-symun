@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  color: #a6a6a6;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.container_fluid {
+  @apply max-w-full px-5 lg:px-25 2xl:mx-auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto Slab", serif;
+}
+.menubar {
+  width: 84px;
+  height: 84px;
+  background-color: #212425;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  transition-duration: 0.3s;
+}
+.menubar:hover {
+  color: #fff !important;
+  transition-duration: 0.3s;
+  background-image: linear-gradient(to right, #fa5252, #dd2476);
+}
+
+.social-media {
+  width: 40px;
+  height: 40px;
+  background-color: #1d1d1d;
+  border-radius: 0.25rem;
+  transition-duration: 0.3s;
+}
+.social-media:hover {
+  color: #fff !important;
+  transition-duration: 0.3s;
+  background-image: linear-gradient(to right, #fa5252, #dd2476);
+}
+
+.link-social {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.device-media {
+  width: 35px;
+  height: 35px;
+  background-color: #000;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.device-media:hover {
+  color: #fff !important;
+  background-image: linear-gradient(
+    to right,
+    #fa5252,
+    #dd2476
+  ); /* Gradient on hover */
+}
+.button_sub:hover {
+  color: #fff !important;
+  transition-duration: 0.3s;
+  background-image: linear-gradient(to right, #fa5252, #dd2476);
+}
+
+.hover-underline-animation {
+  @apply inline-block relative;
+}
+
+.hover-underline-animation::after {
+  @apply dark:bg-white bg-teal content-[''] absolute w-full scale-x-0 h-[1px] bottom-0 left-0 origin-left transition-all ease-in-out;
+}
+
+.hover-underline-animation:hover::after {
+  @apply scale-x-100;
+}
