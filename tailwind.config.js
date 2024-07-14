@@ -26,7 +26,8 @@ export default {
         activeColor: "#fa5252",
         grayBg: "#0d0d0d",
         border_Sub: "#44566c",
-        teal: "#048c80"
+        teal: "#048c80",
+        pickPrimary: "#dd2476"
       },
       fontFamily: {
         Roboto: "'Roboto Slab', 'serif'",
@@ -52,6 +53,9 @@ export default {
       },
       fontSize: {
         3.5: "36px",
+      },
+      boxShadow: {
+        'bottom-white': '0 4px 6px -1px rgba(255, 255, 255, 0.5)', // Customize the shadow to your preference
       },
     },
   },

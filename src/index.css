@@ -107,3 +107,13 @@ h5 {
 .hover-underline-animation:hover::after {
   @apply scale-x-100;
 }
+
+.gradient-text {
+  background: linear-gradient(to right, #fa5252, #dd2476);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#menu-open {
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
