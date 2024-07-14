@@ -18,7 +18,7 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
 
   return (
     <>
-      <nav className="container_fluid h-[70px] flex items-center border border-white">
+      <nav className="container_fluid h-[70px] flex items-center border border-white relative">
         {/* <div className="absolute w-[300px] h-[300px] bg-gradient-to-r from-[#017373] to-[#aad9d1] rounded-full top-0 right-0 overflow-hidden blur-[90px] z-10 opacity-20"></div> */}
         <div className="w-full flex items-center justify-between">
           {/* logo */}
@@ -37,16 +37,15 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
                 <MdOutlineLightMode />
               )}
             </button>
-            <button className="" onClick={toggleMenu}>
+            <button className="lg:hidden" onClick={toggleMenu}>
               <CgMenuRight />
             </button>
           </div>
         </div>
       </nav>
-      <div
-        className={`lg:hidden  fixed top-0 left-0 w-full h-full bg-blue-400 transform ${
-          isMenuOpen ? "translate-y-0 top-[90px]" : "-translate-y-full"
-        } transition-transform duration-300 ease-in-out z-[999]`}
+      {isMenuOpen && 
+      <div id="menu-open"
+        className="bg-blue-400 absolute top-[90px] transition-transform duration-300 ease-in-out z-[999] left-[20px] right-5 md:left-14 md:right-14 lg:hidden"
       >
         <div className="flex items-center justify-between h-[96px] border-b-[.5px] border-primary px-8">
           <Link to={"/"} className="text-2xl leading-9">
@@ -81,6 +80,7 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
           </ul>
         </div>
       </div>
+      }
     </>
   );
 };

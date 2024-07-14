@@ -22,9 +22,8 @@ const RootLayout = () => {
   return (
     <div className="pt-5 pb-20 bg-slate-500 dark:bg-black max-w-[1920px]">
       <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} />
-      
       <div className="container_fluid pt-9 md:pt-14">
-        <div className="lg:grid  lg:grid-cols-3 gap-7">
+        <div className="lg:grid  lg:grid-cols-3 lg:gap-5 xl:gap-7">
           <div className="lg:col-span-1">
             <SideBar />
           </div>

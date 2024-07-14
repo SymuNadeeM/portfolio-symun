@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { profileData } from "../../data/profileData";
 const SideBar = () => {
   return (
-    <div className="px-3.5 sm:px-9 lg:px-3.5 py-7.5 bg-black rounded-[20px] sticky top-0 max-w-[600px] mx-auto">
+    <div className="px-3.5 sm:px-9 lg:px-3.5 py-7.5 bg-black rounded-[20px] sticky top-0">
       {profileData.map((profileData, index) => (
         <div key={index} className="text-center">
           {/* image */}
