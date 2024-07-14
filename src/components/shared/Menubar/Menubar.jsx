@@ -3,7 +3,7 @@ import { menubarData } from "../../../data/menubarData";
 
 const Menubar = () => {
   return (
-    <div className="text-right hidden xl:block">
+    <div className="text-right hidden lg:block">
       <div className="p-7.5 rounded-2xl bg-black inline-block">
         <nav>
           <ul className="flex items-center gap-3">
