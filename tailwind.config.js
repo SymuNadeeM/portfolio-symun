@@ -29,7 +29,10 @@ export default {
         teal: "#048c80",
         pickPrimary: "#dd2476",
         logoColor: "#5e1bb7",
-        wBack:"#f3f6f6"
+        wBack:"#f3f6f6",
+        wBlueBg:"#eef5fa",
+        wPurBg:"#fff4f4",
+        wDarkBlueBg:"#201658"
       },
       fontFamily: {
         Roboto: "'Roboto Slab', 'serif'",

@@ -16,10 +16,10 @@ export const aboutData = {
     { label: "HAPPY CLIENTS", value: "10+" },
   ],
   interests: [
-    { icon: MdModeOfTravel, label: "Travel" },
-    { icon: FaLaptopCode, label: "Coding" },
-    { icon: IoFastFood, label: "Eating" },
-    { icon: TbCricket, label: "Playing" },
+    { icon: MdModeOfTravel, label: "Travel", color: "#FF972D" },
+    { icon: FaLaptopCode, label: "Coding",color: "#048c80" },
+    { icon: IoFastFood, label: "Eating",color: "#FF972D" },
+    { icon: TbCricket, label: "Playing",color: "#048c80" },
   ],
   experiences: [
     {

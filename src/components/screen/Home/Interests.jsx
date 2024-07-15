@@ -9,8 +9,8 @@ const Interests = () => {
       <div className="flex flex-wrap justify-between items-center gap-y-4 sm:gap-y-0">
         {aboutData.interests.map((interest, index) => (
           <div key={index} className="flex items-center justify-center gap-2">
-            <interest.icon size={20} className="text-white" />
-            <p className="font-medium">{interest.label}</p>
+            <interest.icon size={20} className={`dark:text-white text-${interest.color}`}  />
+            <p className="font-medium text-black dark:text-grayText">{interest.label}</p>
           </div>
         ))}
       </div>

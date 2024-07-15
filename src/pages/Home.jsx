@@ -11,11 +11,11 @@ const Home = () => {
   
   return (
     <section>
-      <div className="mt-10 px-5 py-5 sm:px-10 sm:py-13  bg-black rounded-[20px]">
+      <div className="mt-10 px-5 py-5 sm:px-10 sm:py-13 bg-white  dark:bg-black rounded-[20px]">
         <TitleText title={aboutData.about.title} />
 
         {aboutData.about.description.map((paragraph, index) => (
-          <p key={index} className="w-full tracking-tight leading-7">
+          <p key={index} className="w-full tracking-tight leading-7 text-border_Sub dark:text-grayText">
             {paragraph}
           </p>
         ))}
