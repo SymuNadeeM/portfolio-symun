@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { profileData } from "../../data/profileData";
 const SideBar = () => {
   return (
-    <div className="px-3.5 sm:px-9 lg:px-3.5 py-7.5 bg-black rounded-[20px] sticky top-0">
+    <div className="px-3.5 sm:px-9 lg:px-3.5 py-7.5 bg-white dark:bg-black rounded-[20px] sticky top-0">
       {profileData.map((profileData, index) => (
         <div key={index} className="text-center">
           {/* image */}
@@ -18,10 +18,10 @@ const SideBar = () => {
               
             </div>
           </div>
-          <h4 className="mb-5 xl:mb-3 text-xl xl:text-2xl leading-4 font-medium text-white">
+          <h4 className="mb-5 xl:mb-3 text-xl xl:text-2xl leading-4 font-medium text-black dark:text-white">
             {profileData.name}
           </h4>
-          <span className="px-5 py-2 rounded-md  font-medium bg-grayBackground text-grayText">
+          <span className="px-5 py-2 rounded-md  font-medium bg-wBack dark:bg-grayBackground  text-black dark:text-grayText">
             {profileData.occupation}
           </span>
           <div className="mt-3.5 mb-7.5 flex items-center justify-center">
@@ -39,12 +39,12 @@ const SideBar = () => {
               ))}
             </ul>
           </div>
-          <div className="mb-7.5 px-3.5 py-5 rounded-2xl bg-grayBackground">
+          <div className="mb-7.5 px-3.5 py-5 rounded-2xl bg-wBack dark:bg-grayBackground">
             {profileData.contactInfo.map((contact, index) => (
               <div
                 key={index}
                 className={`py-2.5 flex items-center gap-[10px] ${
-                  index === 0 ? "" : "border-t border-borderColor"
+                  index === 0 ? "" : "border-t border-[#e3e3e3] dark:border-borderColor"
                 }`}
               >
                 <div className="device-media" style={{ color: contact.color }}>
@@ -54,7 +54,7 @@ const SideBar = () => {
                   <span className="text-xs leading-[18px]">
                     {contact.label}
                   </span>
-                  <p className="text-sm text-white">{contact.value}</p>
+                  <p className="text-sm text-black dark:text-white">{contact.value}</p>
                 </div>
               </div>
             ))}

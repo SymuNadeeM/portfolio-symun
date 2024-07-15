@@ -28,15 +28,20 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
           <div className="flex items-center gap-5">
             <button
               onClick={handleThemeSwitch}
-              className="w-12 h-12 flex items-center justify-center rounded-full bg-white shadow-xl"
+              className="w-12 h-12 flex items-center justify-center rounded-full bg-black dark:bg-white shadow-xl text-logoColor"
             >
               {theme === "dark" ? (
-                <BsFillMoonStarsFill />
-              ) : (
                 <MdOutlineLightMode />
+              ) : (
+                <BsFillMoonStarsFill className="text-white" />
               )}
             </button>
-            <button className={`lg:hidden w-10 h-10 flex items-center justify-center rounded-full text-white ${isMenuOpen ? "bg-blue-500" : "bg-red-300"}`} onClick={toggleMenu}>
+            <button
+              className={`lg:hidden w-10 h-10 flex items-center justify-center rounded-full text-white ${
+                isMenuOpen ? "bg-blue-500" : "bg-red-300"
+              }`}
+              onClick={toggleMenu}
+            >
               <div
                 className={
                   isMenuOpen

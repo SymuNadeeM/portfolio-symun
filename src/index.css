@@ -19,14 +19,14 @@ body {
   color: #a6a6a6;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  background-image: url("/page-bg-dark.jpg") !important;
+  background-image: url("/page-bg-light.jpg") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center center !important;
 }
 
 .dark body {
-  background-image: url("/page-bg-light.jpg") !important;
+  background-image: url("/page-bg-dark.jpg") !important;
 }
 
 .container_fluid {
@@ -60,9 +60,12 @@ h5 {
 .social-media {
   width: 40px;
   height: 40px;
-  background-color: #1d1d1d;
+  background-color: #f3f6f6;
   border-radius: 0.25rem;
   transition-duration: 0.3s;
+}
+.dark .social-media {
+  background-color: #1d1d1d;
 }
 .social-media:hover {
   color: #fff !important;
@@ -81,11 +84,16 @@ h5 {
 .device-media {
   width: 35px;
   height: 35px;
-  background-color: #000;
+  background-color: white;
   border-radius: 0.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.dark .device-media {
+  background-color: #000;
 }
 
 .device-media:hover {

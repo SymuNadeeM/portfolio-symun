@@ -27,7 +27,9 @@ export default {
         grayBg: "#0d0d0d",
         border_Sub: "#44566c",
         teal: "#048c80",
-        pickPrimary: "#dd2476"
+        pickPrimary: "#dd2476",
+        logoColor: "#5e1bb7",
+        wBack:"#f3f6f6"
       },
       fontFamily: {
         Roboto: "'Roboto Slab', 'serif'",
