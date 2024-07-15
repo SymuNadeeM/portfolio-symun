@@ -25,6 +25,10 @@ body {
   background-position: center center !important;
 }
 
+.dark body {
+  background-image: url("/page-bg-light.jpg") !important;
+}
+
 .container_fluid {
   @apply max-w-full px-5 md:px-14 lg:px-5 xl:px-25 2xl:mx-auto;
 }
