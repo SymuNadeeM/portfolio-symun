@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { CgMenuRight } from "react-icons/cg";
+import { IoMdClose } from "react-icons/io";
 import { MdOutlineLightMode } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import logo from "../../../assets/wingLogo.png";
@@ -36,7 +37,19 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
               )}
             </button>
             <button className="lg:hidden" onClick={toggleMenu}>
-              <CgMenuRight size={24} />
+              <div
+                className={
+                  isMenuOpen
+                    ? "icon-transition icon-close"
+                    : "icon-transition icon-open"
+                }
+              >
+                {isMenuOpen ? (
+                  <IoMdClose size={24} />
+                ) : (
+                  <CgMenuRight size={24} />
+                )}
+              </div>
             </button>
           </div>
         </div>
@@ -44,26 +57,26 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
       <div
         id="menu-open"
         className={`bg-black absolute top-[90px] z-[999] left-[20px] right-5 md:left-14 md:right-14 lg:hidden transition-all duration-300 ease-in-out shadow-bottom-white rounded-bl-2xl rounded-br-2xl ${
-          isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+          isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <ul className="px-14 py-8 space-y-2">
-        {menubarData.map((menuItem, index) => (
-              <li key={index} onClick={closeMenu}>
-                <NavLink
-                  to={menuItem.link}
-                  className={({ isActive }) =>
-                    `flex  items-center font-medium duration-300 gap-3  ${
-                      isActive ? "text-pickPrimary" : ""
-                    }`
-                  }
-                >
-                  <menuItem.icon />
-                  {menuItem.label}
-                </NavLink>
-              </li>
-            ))}
-        </ul>    
+          {menubarData.map((menuItem, index) => (
+            <li key={index} onClick={closeMenu}>
+              <NavLink
+                to={menuItem.link}
+                className={({ isActive }) =>
+                  `flex  items-center font-medium duration-300 gap-3  ${
+                    isActive ? "text-pickPrimary" : ""
+                  }`
+                }
+              >
+                <menuItem.icon />
+                {menuItem.label}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
       </div>
     </>
   );
