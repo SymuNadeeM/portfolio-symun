@@ -15,8 +15,8 @@ const SkillAndKnowledge = () => {
           {skillsData.slice(0,4).map((skill, index) => (
             <div key={index}>
               <div className="mb-2 flex items-center justify-between">
-                <h4>{skill.name}</h4>
-                <h5>{skill.percent}%</h5>
+                <h4 className="text-black dark:text-grayText font-medium">{skill.name}</h4>
+                <h5 className="text-black dark:text-grayText font-medium">{skill.percent}%</h5>
               </div>
               <Line
                 percent={skill.percent}
@@ -31,8 +31,8 @@ const SkillAndKnowledge = () => {
           {skillsData.slice(4,7).map((skill, index) => (
             <div key={index}>
               <div className="mb-2 flex items-center justify-between">
-                <h4>{skill.name}</h4>
-                <h5>{skill.percent}%</h5>
+                <h4 className="text-black dark:text-grayText font-medium">{skill.name}</h4>
+                <h5 className="text-black dark:text-grayText font-medium">{skill.percent}%</h5>
               </div>
               <Line
                 percent={skill.percent}

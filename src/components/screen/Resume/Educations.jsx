@@ -13,13 +13,13 @@ const Educations = () => {
         {education.map((education, index) => (
           <div
             key={index}
-            className="px-5 pb-5 pt-6 border border-borderRe hover:border-teal duration-300 rounded-[12px] space-y-2"
+            className="px-5 pb-5 pt-6 bg-wBlueBg dark:bg-transparent border border-transparent shadow-md dark:border dark:border-borderRe hover:border-teal duration-300 rounded-[12px] space-y-2"
           >
-            <span>{education.year}</span>
-            <h4 className="text-lg text-white font-medium leading-6">
+            <span className="text-black dark:text-grayText" >{education.year}</span>
+            <h4 className="text-lg text-black dark:text-white font-medium leading-6">
               {education.title}
             </h4>
-            <p>{education.institute}</p>
+            <p className="text-orange dark:text-grayText">{education.institute}</p>
           </div>
         ))}
       </div>
