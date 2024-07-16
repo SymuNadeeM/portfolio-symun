@@ -8,7 +8,7 @@ const ProjectPageStructure = ({ ProjectData, halfLength }) => {
         {ProjectData.slice(0, halfLength).map((items) => (
           <div
             key={items.id}
-            className="p-5 bg-grayBg border border-borderRe rounded-xl w-full h-fit"
+            className="p-5 bg-white shadow-lg dark:bg-grayBg dark:border border-borderRe rounded-xl w-full h-fit"
           >
             <Link to={"#"} className="rounded-xl mb-4 block overflow-hidden">
               <div className="w-full h-[200px]">
@@ -18,9 +18,9 @@ const ProjectPageStructure = ({ ProjectData, halfLength }) => {
                 
               </div>
             </Link>
-            <p className="text-xs capitalize">{items.title}</p>
+            <p className="text-xs capitalize text-black dark:text-grayText">{items.title}</p>
             <Link to={"#"}>
-              <h5 className="font-medium text-white hover:text-activeColor duration-300 leading-6 capitalize">
+              <h5 className="font-medium text-black dark:text-white hover:text-activeColor duration-300 leading-6 capitalize">
                 {items.name}
               </h5>
             </Link>
@@ -31,7 +31,7 @@ const ProjectPageStructure = ({ ProjectData, halfLength }) => {
         {ProjectData.slice(halfLength).map((items) => (
           <div
             key={items.id}
-            className="p-5 bg-grayBg border border-borderRe rounded-xl w-full h-fit"
+            className="p-5 bg-white shadow-lg dark:bg-grayBg dark:border border-borderRe rounded-xl w-full h-fit"
           >
             <Link to={"#"} className="rounded-xl mb-4 block overflow-hidden">
               <div className="w-full h-[200px]">
@@ -41,9 +41,9 @@ const ProjectPageStructure = ({ ProjectData, halfLength }) => {
                 
               </div>
             </Link>
-            <span className="text-xs capitalize">{items.title}</span>
+            <span className="text-xs capitalize text-black dark:text-grayText">{items.title}</span>
             <Link to={"#"}>
-              <h5 className="font-medium text-white hover:text-activeColor duration-300 leading-6 capitalize">
+              <h5 className="font-medium text-black dark:text-white hover:text-activeColor duration-300 leading-6 capitalize">
                 {items.name}
               </h5>
             </Link>
