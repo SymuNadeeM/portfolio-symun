@@ -38,7 +38,7 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
             </button>
             <button
               className={`lg:hidden w-10 h-10 flex items-center justify-center rounded-full text-white ${
-                isMenuOpen ? "bg-blue-500" : "bg-red-300"
+                isMenuOpen ? "bg-wDarkBlueBg dark:bg-[#36C2CE]" : "bg-[#36C2CE] dark:bg-wDarkBlueBg"
               }`}
               onClick={toggleMenu}
             >
