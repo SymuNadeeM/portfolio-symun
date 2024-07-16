@@ -5,9 +5,9 @@ const FormInput = ({ type, placeholder, label }) => {
     <div className="relative w-full min-w-[200px]">
       {type === 'textarea' ? (
         <textarea
-          rows="3"
+          rows="5"
           placeholder={placeholder}
-          className="peer w-full border-b border-blue-200 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-black dark:text-white outline outline-0 transition-all placeholder-shown:border-blue-400 focus:border-blue-700 focus:outline-0 disabled:border-0 disabled:bg-blue-50 placeholder:opacity-0 focus:placeholder:opacity-100"
+          className="resize-none peer w-full border-b border-blue-200 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-black dark:text-white outline outline-0 transition-all placeholder-shown:border-blue-400 focus:border-blue-700 focus:outline-0 disabled:border-0 disabled:bg-blue-50 placeholder:opacity-0 focus:placeholder:opacity-100"
         />
       ) : (
         <input

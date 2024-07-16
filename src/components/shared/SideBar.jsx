@@ -60,15 +60,17 @@ const SideBar = () => {
             ))}
           </div>
           <div className="flex items-center justify-center">
-            <Link
-              to="#"
+          
+            <a
+             href="./cv.pdf"
+             download
               className="h-[53px] w-[205px] rounded-[10px] border border-transparent text-white text-lg bg-gradient-to-r from-[#fa5252] to-[#dd2476] flex items-center justify-center hover:bg-gradient-to-br"
             >
               <span>
                 <IoMdDownload className="text-lg mr-1" />
               </span>
               Download CV
-            </Link>
+            </a>
           </div>
         </div>
       ))}
