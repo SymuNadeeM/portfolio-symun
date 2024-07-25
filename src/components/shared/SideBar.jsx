@@ -64,7 +64,7 @@ const SideBar = () => {
             <a
              href="./cv.pdf"
              download
-              className="h-[53px] w-[205px] rounded-[10px] border border-transparent text-white text-lg bg-gradient-to-r from-[#fa5252] to-[#dd2476] flex items-center justify-center hover:bg-gradient-to-br"
+              className="h-[53px] w-[205px] rounded-[10px] border border-transparent text-white text-lg bg-gradient-to-r from-[#fa5252] to-[#dd2476] flex items-center justify-center transform  transition duration-500 hover:scale-110"
             >
               <span>
                 <IoMdDownload className="text-lg mr-1" />
