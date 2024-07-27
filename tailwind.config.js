@@ -32,7 +32,8 @@ export default {
         wBack:"#f3f6f6",
         wBlueBg:"#eef5fa",
         wPurBg:"#fff4f4",
-        wDarkBlueBg:"#201658"
+        wDarkBlueBg:"#201658",
+        wExBack:"#E7F0DC"
       },
       fontFamily: {
         Roboto: "'Roboto Slab', 'serif'",

@@ -7,10 +7,10 @@ const Achievement = () => {
       {aboutData.achievements.map((achievement, index) => (
         <div
           key={index}
-          className="bg-wBlueBg dark:bg-grayBackground rounded-md p-4 flex flex-col justify-center items-center"
+          className="bg-[#508C9B] dark:bg-grayBackground rounded-md p-4 flex flex-col justify-center items-center shadow-lg"
         >
-          <h2 className="text-3xl font-semibold text-black dark:text-grayText">{achievement.value}</h2>
-          <p className="pt-2 text-sm uppercase text-center text-black dark:text-grayText">
+          <h2 className="text-3xl font-semibold text-white dark:text-grayText">{achievement.value}</h2>
+          <p className="pt-2 text-sm uppercase text-center text-white dark:text-grayText">
             {achievement.label}
           </p>
         </div>

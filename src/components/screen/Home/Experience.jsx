@@ -10,7 +10,7 @@ const Experience = () => {
       {aboutData.experiences.map((experience) => (
         <div
           key={experience.id}
-          className="space-y-2 bg-wPurBg dark:bg-grayBackground p-5 rounded shadow-md"
+          className="space-y-2 bg-wExBack dark:bg-grayBackground p-5 rounded shadow-md"
         >
           <div className="flex justify-between text-center">
             <h4 className="text-wDarkBlueBg dark:text-orange font-semibold">{experience.year}</h4>
