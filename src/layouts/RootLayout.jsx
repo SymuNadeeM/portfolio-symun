@@ -5,7 +5,7 @@ import Navbar from "../components/shared/Navbar/Navbar";
 import SideBar from "../components/shared/SideBar";
 
 const RootLayout = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   useEffect(()=>{
     if (theme === "dark") {

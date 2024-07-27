@@ -12,7 +12,7 @@ const Menubar = () => {
                 <NavLink
                   to={menuItem.link}
                   className={({ isActive }) =>
-                    `flex flex-col items-center w-[84px] h-[84px]  rounded-lg  justify-center font-medium transition duration-300 hover:bg-gradient-to-r from-[#fa5252] to-[#dd2476] hover:text-white text-[13px] ${
+                    `flex flex-col items-center w-[84px] h-[84px]  rounded-lg  justify-center font-medium transition duration-300 hover:bg-gradient-to-r from-[#fa5252] to-[#dd2476] hover:text-white dark:hover:text-white text-[13px] ${
                       isActive ? "bg-gradient-to-r from-[#fa5252] to-[#dd2476] text-white" : "bg-wBack dark:bg-[#212425] text-[#686D76] dark:text-grayText"
                     }`
                   }
