@@ -61,13 +61,13 @@ const Navbar = ({ handleThemeSwitch, theme }) => {
       </nav>
       <div
         id="menu-open"
-        className={`bg-black absolute top-[90px] z-[999] left-[20px] right-5 md:left-14 md:right-14 lg:hidden transition-all duration-300 ease-in-out shadow-bottom-white rounded-bl-2xl rounded-br-2xl ${
+        className={`bg-[#36C2CE] dark:bg-black absolute top-[90px] z-[999] left-[20px] right-5 md:left-14 md:right-14 lg:hidden transition-all duration-300 ease-in-out shadow-bottom-white rounded-bl-2xl rounded-br-2xl ${
           isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <ul className="px-14 py-8 space-y-2">
           {menubarData.map((menuItem, index) => (
-            <li key={index} onClick={closeMenu}>
+            <li key={index} onClick={closeMenu} className="text-white dark:text-grayText">
               <NavLink
                 to={menuItem.link}
                 className={({ isActive }) =>

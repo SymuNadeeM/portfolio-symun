@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ProjectPageStructure = ({ ProjectData, halfLength }) => {
   return (
-    <div className="w-full md:flex gap-5">
+    <div className="w-full md:flex gap-5 space-y-5 md:space-y-0">
       <div className="w-full md:w-1/2 flex flex-col gap-5">
         {ProjectData.slice(0, halfLength).map((items) => (
           <div
