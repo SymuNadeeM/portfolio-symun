@@ -1,6 +1,9 @@
-import pic1 from "../assets/project-img/pic1.jpg";
-import pic2 from "../assets/project-img/pic2.jpg";
-import pic3 from "../assets/project-img/pic3.jpg";
+import pic1 from "../assets/project-img/web-development.webp";
+import pic2 from "../assets/project-img/web-development2.jpg";
+import pic3 from "../assets/project-img/web-development3.jpg";
+import pic4 from "../assets/project-img/web-development4.png";
+import pic5 from "../assets/project-img/web-development5.png";
+import pic6 from "../assets/project-img/web-development6.jpg";
 
 export const allProjectData = [
   {
@@ -29,7 +32,7 @@ export const allProjectData = [
   },
   {
     id: 4,
-    image: pic1,
+    image: pic6,
     type: "react",
     title: "Chul Urina",
     demoLink: "#",
@@ -45,7 +48,7 @@ export const allProjectData = [
   },
   {
     id: 6,
-    image: pic1,
+    image: pic5,
     type: "Javascript",
     title: "Chul Urina",
     demoLink: "#",
@@ -69,7 +72,7 @@ export const allProjectData = [
   },
   {
     id: 9,
-    image: pic2,
+    image: pic4,
     type: "react",
     title: "Chul Urina",
     demoLink: "#",
