@@ -14,7 +14,7 @@ const ProjectPageStructure = ({ ProjectData, halfLength }) => {
               <div className="w-full h-[200px]">
                 <img src={items.image}
                   alt={items.name}
-                  className="object-cover md:object-fill w-full h-full" />
+                  className="object-fill w-full h-full" />
                 
               </div>
             </Link>
@@ -37,7 +37,7 @@ const ProjectPageStructure = ({ ProjectData, halfLength }) => {
               <div className="w-full h-[200px]">
                 <img src={items.image}
                   alt={items.name}
-                  className="object-cover md:object-fill w-full h-full" />
+                  className="object-fill w-full h-full" />
                 
               </div>
             </Link>
