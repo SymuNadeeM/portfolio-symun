@@ -10,10 +10,10 @@ export const aboutData = {
       "I'm a diligent web developer with a knack for front-end technologies and a penchant for effective team communication. My passion lies in crafting captivating user experiences, breathing life into designs with expertise in JavaScript, React, Next.js, Node.js, CSS, Bootstrap, and Tailwind CSS. I'm always eager to learn about the latest advancements in web technologies, driven by a desire to create seamless functionality and visually stunning interfaces.",
     ],
   },
-  achievements: [
-    { label: "Years of Experience", value: "3+" },
-    { label: "PROJECTS COMPLETED", value: "30+" },
-    { label: "HAPPY CLIENTS", value: "10+" },
+   achievements : [
+    { end: 3, duration: 1, label: "Years of Experience" },
+    { end: 30, duration: 5, label: "Projects Completed" },
+    { end: 10, duration: 3, label: "Happy Clients" },
   ],
   interests: [
     { icon: MdModeOfTravel, label: "Travel", color: "#FF972D" },
